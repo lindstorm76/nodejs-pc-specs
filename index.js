@@ -3,7 +3,7 @@ const os = require("os")
 const app = express()
 app.set('view engine', 'pug')
 require('dotenv').config()
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 3000
 
 app.get('/', async function (req, res) {
   const platform = process.platform
