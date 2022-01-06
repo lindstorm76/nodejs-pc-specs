@@ -1,0 +1,25 @@
+html
+  head
+    title= title
+    link(rel="icon" ref="https://pbs.twimg.com/profile_images/1396514830937333771/7G7NYThZ_400x400.jpg")
+    script(type="text/javascript", src="https://cdn.tailwindcss.com")
+    script(src="https://kit.fontawesome.com/bfead68dcf.js" crossorigin="anonymous")
+  body
+    ul(class="flex bg-purple-500 h-16 flex items-center")
+      div(class="container mx-auto flex flex items-center")
+        h1(class="text-white text-lg")= header
+        button(class="ml-auto")
+          i(class="fab fa-github text-4xl text-gray-200 hover:text-gray-50")
+    div(class="container mx-auto pt-16")
+      h2(class="text-2xl mb-4 text-gray-600") Operating System: 
+        span(class="text-gray-900") #{os}
+      h2(class="text-2xl mb-4 text-gray-600") Device name: 
+        span(class="text-gray-900") #{deviceName}
+      h2(class="text-2xl mb-4 text-gray-600") Operating System: 
+        span(class="text-gray-900") #{os}
+      h2(class="text-2xl mb-4 text-gray-600") Installed RAM: 
+        span(class="text-gray-900") #{ram} GB
+      h2(class="text-2xl mb-4 text-gray-600") IP: 
+        span(class="text-gray-900") #{ip}
+      h2(class="text-2xl mb-4 text-gray-600") PC uptime: 
+        span(class="text-gray-900") #{uptime} Hours
