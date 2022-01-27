@@ -16,7 +16,7 @@ app.get('/', async function (req, res) {
   const ip = req.ip === "::1" ? "127.0.0.1" : req.ip
   res.render('index', {
     title: 'NodeJS PC Specs',
-    header: 'Dumb NodeJS PC Specs by Thanapong Angkha',
+    header: 'Dumb NodeJS PC Specs Web Application by Thanapong Angkha',
     os: userOS,
     deviceName: os.hostname(),
     processor: processor,
